@@ -1,0 +1,19 @@
+<template name="meteor">
+    <h1>TEST</h1>
+
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Список компонентов
+      </button>
+
+    <div class="collapse" id="collapseExample">
+      <div class="card card-block">
+        <dl class="dl-horizontal">
+  {{#each meteor}}
+  <dt class="col-sm-3">{{title}}</dt>
+  <dd class="col-sm-9">{{body}}</dd>
+{{/each}}
+</dl>
+      </div>
+    </div>
+
+</template>
